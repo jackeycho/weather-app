@@ -51,7 +51,8 @@ p {
 }
 .sup {
   font-size: 2em;
-  color: #fff;
+  font-weight: 800;
+  color: rgb(9, 2, 53);
 }
 
 .city-temp {
