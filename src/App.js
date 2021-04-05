@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div className="main-container">
-      <p className="sup">React Weather App...</p>
+      <p className="sup">~ React Weather App ~</p>
 
       <input
         type="text"
