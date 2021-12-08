@@ -6,7 +6,7 @@ body,
   color: #1e2432;
   height: 100%;
   margin: 0;
-  background-image: url(./img/bg.jpg);
+  background-image: url(./img/bg1.jpg);
   background-size: cover;
 }
 
@@ -17,10 +17,12 @@ body,
 
 .main-container {
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 .search {
@@ -49,11 +51,15 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
-.sup {
-  font-size: 2em;
+.desc {
+  position: absolute;
+  left: 10%;
+  font-size: 3em;
   font-weight: 800;
-  color: rgb(65, 179, 245);
+  color: white;
 }
+/* .sup {
+} */
 
 .city-temp {
   font-size: 5rem;
@@ -90,7 +96,12 @@ p {
   flex-direction: column;
   align-items: center;
 }
-
+@media (max-width: 960px) {
+  .desc {
+    position: relative;
+    margin-bottom: 100px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .search {
     padding: 20px 15%;
