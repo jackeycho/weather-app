@@ -19,8 +19,11 @@ const App = () => {
 
   return (
     <div className="main-container">
-      <p className="sup">~ React Weather App ~</p>
-
+      <div className="desc">
+        <p className="sup">
+          React<br></br> Weather<br></br> Website
+        </p>
+      </div>
       <input
         type="text"
         className="search"
@@ -29,6 +32,7 @@ const App = () => {
         onChange={(e) => setQuery(e.target.value)}
         onKeyPress={search}
       />
+
       {weather.main && (
         <div className="city">
           <h2 className="city-name">
